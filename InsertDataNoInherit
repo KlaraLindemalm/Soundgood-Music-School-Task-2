@@ -345,48 +345,47 @@ VALUES
 
 
 -- LESSON_PRICE
-
-INSERT INTO lesson_price (price_type,price_skill,discount,instructor_pay)
+INSERT INTO lesson_price (price_type,price_skill,discount,instructor_pay,type)
 VALUES
 -- Individual Beginner
-  ('300','0','20','250'),  
+  ('300','0','20','250','Individual Beginner Discounted'),  
 -- Individual Intermediate  
-  ('300','50','20','300'),
+  ('300','50','20','300','Individual Intermediate Discounted'),
 -- Individual Advanced      
-  ('300','100','20','350'),  
+  ('300','100','20','350','Individual Advanced Discounted'),  
 -- Group Beginner    
-  ('300','0','20','200'),
+  ('300','0','20','200','Group Beginner Discounted'),
 -- Group Intermediate        
-  ('250','50','20','250'),
+  ('250','50','20','250','Group Intermediate Discounted'),
 -- Group Advanced      
-  ('250','100','20','300'),
+  ('250','100','20','300', 'Group Advanced Discounted'),
 -- Ensemble      
-  ('250','0','20','200'),
+  ('250','0','20','200', 'Ensemble Discounted'),
 -- Individual Beginner      
-  ('300','0',NULL,'250'),
+  ('300','0',NULL,'250', 'Individual Beginner'),
 -- Individual Intermediate      
-  ('300','50',NULL,'300'),
+  ('300','50',NULL,'300', 'Individual Intermediate'),
 -- Individual Advanced    
-  ('300','100',NULL,'350'),
+  ('300','100',NULL,'350', 'Individual Advanced'),
 -- Group Beginner    
-  ('300','0',NULL,'200'),
+  ('300','0',NULL,'200', 'Group Beginner'),
 -- Group Intermediate
-  ('250','50',NULL,'250'),
+  ('250','50',NULL,'250','Group Intermediate'),
 -- Group Advanced    
-  ('250','100',NULL,'300'),
+  ('250','100',NULL,'300', 'Group Advanced'),
 -- Ensemble
-  ('250','0',NULL,'200');
-
+  ('250','0',NULL,'200', 'Ensemble');
+  
 --LESSON
 
-INSERT INTO lesson (genre,min_participants,max_participants,booked_participants,lesson_type,confirmed,room_id,time_start,time_end,price_id)
+INSERT INTO lesson (genre,min_participants,max_participants,lesson_type,confirmed,room_id,time_start,time_end,price_id)
 VALUES
- ('rock',5,15,0,'ensemble','No',1,'2022-10-01 15:00:00','2022-10-01 17:00:00',14),
- ('pop',5,10,0,'ensemble','No',3,'2022-10-01 15:00:00','2022-10-01 17:00:00',14),
- (NULL,NULL,NULL,NULL,'individual','Yes',4,'2022-10-01 15:00:00','2022-10-01 17:00:00',8),
- (NULL,5,10,0,'group','No',10,'2022-10-01 17:00:00','2022-10-01 17:00:00',13),
- (NULL,4,9,0,'group','No',8,'2022-10-01 17:00:00','2022-10-01 17:00:00',13),
- ('classical',5,10,0,'group','No',5,'2022-10-01 17:00:00','2022-10-01 17:00:00',12);
+ ('rock',5,15,'ensemble','No',1,'2022-10-01 15:00:00','2022-10-01 17:00:00',14),
+ ('pop',5,10,'ensemble','No',3,'2022-10-01 15:00:00','2022-10-01 17:00:00',14),
+ (NULL,NULL,NULL,'individual','Yes',4,'2022-10-01 15:00:00','2022-10-01 17:00:00',8),
+ (NULL,5,10,'group','No',10,'2022-10-01 17:00:00','2022-10-01 17:00:00',13),
+ (NULL,4,9,'group','No',8,'2022-10-01 17:00:00','2022-10-01 17:00:00',13),
+ ('classical',5,10,'group','No',5,'2022-10-01 17:00:00','2022-10-01 17:00:00',12);
 
 
 --BOOKING
