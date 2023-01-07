@@ -34,7 +34,7 @@ VALUES
   ('232087-8095','Len','Kemp','instructor'),
   ('513881-2812','Quamar','Alvarado','instructor');
 
--- STUDENT
+--STUDENT
 INSERT INTO student (family_id, person_id)
 VALUES
   (null, 1),
@@ -103,7 +103,7 @@ VALUES
   (24,'parent','klara.nibh@yahoo.org','076-444-47-46');
 
 
--- INSTRUMENT
+--INSTRUMENT
 INSERT INTO instrument (type_name,price_per_month,brand_name)
 VALUES
   ('clarinet',300,'fender_musical_instruments'),
@@ -160,7 +160,6 @@ VALUES
   (4,3,'22-04-22');
 
 --ADRESS
-
 INSERT INTO adress (person_id,street,city,zip_code)
 VALUES
   (1,'Ap #154-2375 Felis, Avenue','Falun','98410'),
@@ -198,7 +197,6 @@ VALUES
 
 
 --EMAIL
-
 INSERT INTO email (person_id, email)
 VALUES
   (1,'non@outlook.couk'),
@@ -307,7 +305,6 @@ VALUES
   (32,'mandolin','intermediate');
 
 -- PERSON_SKILL
-
 INSERT INTO person_skill (person_id,skill_id)
 VALUES
 (27,1),
@@ -377,7 +374,6 @@ VALUES
   ('250','0',NULL,'200', 'Ensemble');
   
 --LESSON
-
 INSERT INTO lesson (genre,min_participants,max_participants,lesson_type,confirmed,room_id,time_start,time_end,price_id)
 VALUES
  ('rock',5,15,'ensemble','No',1,'2022-10-01 15:00:00','2022-10-01 17:00:00',14),
