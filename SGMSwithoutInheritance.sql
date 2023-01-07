@@ -13,7 +13,8 @@ CREATE TABLE lesson_price (
  price_type INT NOT NULL,
  price_skill INT,
  discount INT,
- instructor_pay INT NOT NULL
+ instructor_pay INT NOT NULL,
+ type VARCHAR(500) NOT NULL
 );
 
 ALTER TABLE lesson_price ADD CONSTRAINT PK_lesson_price PRIMARY KEY (price_id);
@@ -116,7 +117,6 @@ CREATE TABLE lesson (
  genre VARCHAR(500),
  min_participants INT,
  max_participants INT,
- booked_participants INT,
  lesson_type VARCHAR(500) NOT NULL,
  confirmed BOOLEAN,
  room_id INT NOT NULL,
