@@ -147,7 +147,7 @@ VALUES
   ('piano',1500,'steinway_musical_instruments'),
   ('bass',300,'fender_musical_instruments');
 
-–- INSTRUMENT_LEASE
+--INSTRUMENT_LEASE
 
 INSERT INTO instrument_lease (instrument_id, student_id, lease_start_date)
 VALUES
